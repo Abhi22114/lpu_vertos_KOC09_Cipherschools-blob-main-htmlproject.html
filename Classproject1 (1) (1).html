@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class project try</title>
+    <script>
+        function feedback(){
+            window.open("file:///E:/html/tuckshop.html");
+        }
+    </script>
+    <style>
+        *{
+            text-transform: uppercase;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        body{
+            background-image:url(https://images.jdmagicbox.com/comp/siliguri/d8/9999px353.x353.130401110528.p2d8/catalogue/recoil-siliguri-restaurants-and-bars-m9n66ves0d.jpg?clr=#4c421a);
+            background-size: cover;
+            position: sticky;
+            background-repeat: no-repeat;
+            
+        }
+        
+       hr{
+        border: 1px solid orange;
+       }
+       h1.eatz{
+        text-transform:uppercase;
+        background-image: linear-gradient(orange,rgb(237, 89, 89));
+        background-clip: text;
+         -webkit-background-clip: text;
+         -moz-background-clip: text;
+         -webkit-text-fill-color: transparent; 
+         -moz-text-fill-color: transparent;
+         position:absolute;
+         top:2rem;
+         left:9rem;
+       }
+       .border1,.border2,.border3,.border4,.border5{
+            margin-left:38px ;
+            border: 2px solid black;
+            height:250px;
+            width:250px;
+            float: left;
+            border-radius: 20px 22px 20px 23px;
+            box-shadow: 2px 2px 2px black;
+            transition: 0.5s;
+            overflow: hidden;
+        }
+
+        .border1:hover,.border2:hover,.border3:hover,.border4:hover,.border5:hover{
+            margin-left:38px ;
+            border: 2px solid rgb(237, 126, 0);
+            height:250px;
+            width:250px;
+            
+            border-radius: 15px 15px 15px 15px;
+            box-shadow: 8px 8px 8px black;
+            transition: 0.6s;
+        }
+       
+     
+        
+        .nav1{
+            margin-left:70px ;
+            border: 2px solid black;
+            background-color: rgba(255, 255, 255, 0.498);
+            height:50px;
+            width:250px;
+            float: left;
+            border-radius: 15px 15px 15px 15px;
+            box-shadow: 2px 2px 2px black;
+            transition: 0.5s;
+            overflow: hidden;
+            text-align: center;
+
+        }
+        .nav1:hover{
+            margin-left:70px ;
+            border: 2px solid black;
+            height:50px;
+            width:250px;
+            float: left;
+            border-radius: 15px 15px 15px 15px;
+            box-shadow: 20px 20px 20px rgb(91, 45, 5);
+            transition: 0.5s;
+            overflow: hidden;
+            text-align: center;
+        }
+        .img1{
+            border:1px solid gold;
+            border-radius: 15px 15px 15px 15px;
+            box-shadow: 0px 0px 5px gold;
+            height: 5vw;
+            cursor:pointer;
+        }
+        .size1{
+            color: black;
+            font-size: 30px;
+        }
+        .color1{
+            color: black;
+        }
+        .border1,.border2,.border3,.border4,.border5{
+            color: white;
+            text-align:center;
+            
+        }
+        .border1{
+                 background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmRaGLipTQT1-Ec-z4cCszlDnoAH-eX_Kf-MllBj_Dgrz2iRzZTzXjdoFzVwpPxo3GQKM&usqp=CAU);
+                 background-color: rgb(255, 157, 0);
+                 background-size: 250px;
+                 background-repeat: no-repeat;
+                 
+        }
+        .border2{
+                 background-image: url(data:image/jpeg;base64,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yVs7C9YSgAtkc2sLXC6XG7fl+E6DZlb/AHbfC0s9g0hSZ2qlU0sLsutzc6X7hJ4SjUdVaCHATexi17pCz4Y8zut5cvDujMb3vruvbW2+1+UnezUwbGpm5BFZifM2Hzkyhg2+pSC/eq9pvJbWHw85bSwGLf8Ad3eZ9Br6JCrsPhGtmJFNL3zGwBPNVGrHw+MlUKWlqYKqRq599xyH2V7h5kywTADNmYmo/M6/ASwobOvq+g5cfOdjD4RlHvTmdvPsNnU8V6AqzB4Av2VFlG8/1vM0GGw601yqP1J5mdEQAWAsJ7mlepERCJERCJERCJERCJERCJERCJERCJERCJERCKNVwaNrax5jSR2wLDcQfQyxiEVRUwAPvUwe+wv8ROZ2NRO9LebfrLuIkoqZNg0Psn94yQmxqC7qY8yT8zLGJ7JRRUwwGiqFHcAPlP0YbmfhJMTxFzSmF3CdIiESIiESIiESIiESIiESIiESIiESIiESIiESIiESIiESIiESIiESIiESIiESIiESIiESIiESIiESIiESIiESIiESIiESIiESIiESIiESIiESIiESIiESIiESIiESIiESIiESIiESIiESIiEX/9k=);
+                 background-color: white;
+                 background-size: 250px;
+                 background-repeat: no-repeat;
+                 text-align:bottom;
+        }
+        .border3{
+                background-color: yellow;
+                background-image: url(https://img.freepik.com/premium-vector/chicken-mascot-logo-design-vector-template_441059-159.jpg?w=2000);
+                background-size: 250px;
+                 background-repeat: no-repeat;
+        }
+        .border4{
+                background-image: url(https://media.istockphoto.com/id/1172879542/vector/chinese-food-illustration-logo.jpg?s=612x612&w=0&k=20&c=OvuJcAijnf1AnZtxaDlcrhoZByBGIL00SBVDIMEG6Rc=);
+                background-size: 250px;
+                background-repeat: no-repeat;
+        }
+        .border5{
+            background-image: url(https://production.listennotes.com/podcasts/todays-special-todays-special-6LegZIGJvpX-XwrJxIhFdS2.1400x1400.jpg);
+            background-size: 250px;
+        }
+        div.boder5{
+            overflow: hidden;
+        }
+        .hr1{
+            position: relative;
+            top: 500px;
+            border: 1px solid black;
+            
+        }
+        .div1{
+            position: absolute;
+            top: 800px;
+        }
+        div.ul1{
+            position: absolute;
+             
+            color: azure;
+            font-size: 25px;
+            
+        }
+
+        .color1{
+            color: white;
+        }
+        .feedback{
+            border: 1px solid black;
+            height: 2rem;
+            width: 15rem;
+            position: fixed;
+            top: 710px;
+            right: 2rem;
+            border-radius: 15px 0px 15px 0px;
+            text-align: center;
+            font-size: 25px;
+            background-color: rgba(168, 35, 8, 0.647);
+            cursor: pointer;
+            font-style:bold;
+            font-weight: 5px;
+            color:rgb(239, 173, 41);
+            text-transform: uppercase;
+            
+        }
+        .feedback:active{
+            transform:translateY(5px);
+        }
+        .hr2{
+            border: 1px solid rgb(255, 255, 255);
+            position:relative;
+            top:25rem;
+            width:35rem;
+            transform: rotate(90deg);
+
+        }
+        .footer1{
+            border: 1px solid gray;
+            background-color: gray;
+            color: darkslategray;
+            position:sticky;
+            bottom:0px;
+        }
+        .os{
+            background-image: linear-gradient(orange,rgb(237, 89, 89));
+        background-clip: text;
+         -webkit-background-clip: text;
+         -moz-background-clip: text;
+         -webkit-text-fill-color: transparent; 
+         -moz-text-fill-color: transparent;
+         border-bottom: 2px solid orange;
+         width:17rem;
+        }
+        .p1{
+            margin-left: 5px;
+            padding: 20px;
+            border: 1px solid orange;
+            height: 35rem;
+            width: 41rem;
+            color: bisque;
+            background-color: rgba(247, 119, 6, 0.764);
+            border-radius: 20px 5px 20px 5px;
+            box-shadow: 5px 5px rgba(87, 38, 11, 0.8);
+            overflow:auto;
+            scrollbar-width: none;
+            
+        }
+        .p1::-webkit-scrollbar{
+            display: none;
+        }
+        span{
+            text-align: center;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 25px;
+            line-height: 2rem;
+            gap:2rem;
+            border-bottom:1px solid white;
+        }
+        div.p1{
+            color: rgb(249, 249, 249);
+            font-family:Arial, Helvetica, sans-serif ;
+        }
+   
+        .img2,.img3,.img4,.img6{
+            position: absolute;
+            left: 63rem;
+            bottom: 30rem;
+            border: 3px solid rgb(125, 84, 85px);
+            width: 250px;
+            transition: 0.3s;
+
+        }
+        .img2:hover,.img3:hover,.img4:hover,.img6:hover{
+            
+           
+            border: 3px solid orange;
+            border-radius: 5px 5px 5px 5px;
+            
+
+        }
+        .img2:active,.img3:active,.img4:active,.img6:active{
+            transform: translateY(5px);
+        }
+
+
+        .img2{
+            left:50rem;
+        }
+        .img3{
+            left:70rem;
+            bottom:400px;
+            
+        }
+        .img4{
+            left:50rem;
+            bottom:5rem;
+        }
+        .img6{
+            left:70rem;
+            bottom:10rem;
+        }
+        .gallery{
+            position: absolute;
+            text-transform: uppercase;
+            font-size: 30px;
+            background-image: linear-gradient(rgb(226, 223, 215),rgb(195, 138, 138));
+        background-clip: text;
+         -webkit-background-clip: text;
+         -moz-background-clip: text;
+         -webkit-text-fill-color: transparent; 
+         -moz-text-fill-color: transparent;
+         border-bottom: 2px solid orange;
+         width:17rem;
+         left:50rem;
+         bottom: 20rem;
+
+        }
+       
+      
+    
+       
+      
+      
+       
+    </style>
+</head>
+<body>
+    <img src="https://t4.ftcdn.net/jpg/03/70/68/45/360_F_370684598_FBmY3dAQF09NrwN79SDwXKnOxnCG4eYA.jpg" alt="logo" class="img1">
+    <h1 class="eatz">eatz</h1><hr/>
+    
+    <a href="http://" class="size1"> <div class="nav1">Home</div></a>
+    <a href="http://" class="size1"> <div class="nav1">Gallery</div></a>
+    <a href="http://" class="size1"> <div class="nav1">Health Tips</div></a>
+    <a href="#TS" class="size1"> <div class="nav1">Contact Us</div></a>
+ 
+    <a href="E:\html\tuckshop.html"   alt = "photo" target = "_self"   class="color1">   <p class="border1">NORTH </p></a>
+    <a href="E:\html\child_cp1t\SOUTH.HTML"   alt = "photo" target = "_blank"  class="color1">   <p class="border2"><font color="black"><b><i>SOUTH </i></b></font></p></a>  
+    <a href="E:\html\child_cp1t\NON-VEG.HTML" alt = "photo" target = "-_right" class="color1">   <p class="border3">NON-VEG </p></a>
+    <a href="E:\html\child_cp1t\CHINESE.HTML" alt = "photo" target = "_left"   class="color1">   <p class="border4">CHINESE </p></a>
+    <a href="" alt = "photo" target = "_parent" class="color1">   <p class="border5">SPECIAL OFFERS</p></a>
+    <hr class="hr2">
+    <hr class="hr3">
+    <div class="feedback" onclick="feedback()"><b>feedback</b></div>
+    <h1 class="os">our speciality</h1>
+    <div class="p1">
+        <h1><center>Welcome to our restaurant</center></h1>
+        <h3><center>Good greetings</center></h3>
+        
+        <span>1) Tasty Food</span><br><br>
+        Invariably the food is tasty and well prepared. The fare is appropriate for the price point and market it’s aimed at. It’s essential that patrons feel they’ve had a good, enjoyable meal. <br><br>
+
+<span>2) Range of Beverages</span><br><br>
+A successful restaurant offers a good 
+range of beverages that cater for different 
+tastes. Although more complex to organize, it 
+certainly pleases customers who want variety. Good 
+restaurants stock popular cordials, wines, spirits and 
+beers and avoid cheaper brands of dubious quality.<br><br>
+
+
+
+<span>3) Good Service</span><br><br>
+Waitrons know their jobs, 
+are efficient and able to advise customers on the best choices. 
+Food is served with minimal delay, and after the meal 
+patrons don’t have to struggle to get their bill.<br><br>
+
+<span>4) Hospitable Atmosphere</span><br><br>
+The atmosphere is relaxed and friendly. 
+If music is played, it’s appropriate and the 
+volume not so loud that customers cannot talk. 
+Staff is trained to avoid distracting behaviour and 
+making unnecessary noise.<br><br>
+
+<span>5) Reasonable Cost</span><br><br>
+Restaurants have different price points, 
+but the golden rule is that customers should feel 
+that the cost of their meal was fair and reasonable, 
+even in high-end establishments. Avoid overcharging.<br><br>
+
+<span>6) Convenient Location</span><br><br>
+The restaurant location must be appropriate. 
+A successful fast food restaurant should be in a popular mall, 
+whereas a sophisticated restaurant would be located in an 
+up-market area that’s easy to access. Adequate parking for 
+patrons should always be provided.<br><br>
+
+<span>7) Culinary Expertise</span><br><br>
+Chefs are chosen for their culinary skills and inventiveness. 
+This applies equally to high-end and budget restaurants. 
+Equally, restaurant management are passionate about food, 
+participate in selecting menus and are customer orientated.
+ Management and staff have appropriate culinary knowledge.<br><br>
+
+<span>8) Hygiene and Cleanliness</span><br><br>
+The entire facility is kept spotlessly clean. 
+Eating areas should be wiped clean frequently because 
+nothing puts patrons off as much as a dirty table. Proper 
+food storage and preparation standards are followed to reduce
+ the risk of spoiling food and to eliminate the risk of incidents 
+ that could damage the restaurant’s reputation.<br><br>
+
+
+
+<span>9) Management Skills</span><br><br>
+The management team of a successful restaurant is well 
+trained and understands the need to balance selling prices 
+along with food preparation, labour costs and overhead costs. 
+They demonstrate really good people management skills, understanding 
+that happy staff means happy customers.<br><br>
+
+<span>10) The Overall Experience</span><br><br>
+The goal of a successful restaurant is to provide clients 
+with an excellent overall experience that draws them back again 
+and again. This means that everything is focused on enhancing the customer’s 
+experience.<br><br>
+    </div>
+   <p class="gallery"> gallery<p>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1aRTfWovD3NnrDqY9Q9axikOiRTv8lB6dpQ&usqp=CAU" alt="1" class="img2">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9ne3b4wI1309W5O7i92el8Q6xh47sP898zw&usqp=CAU" alt="2" class="img3">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXgeMDQqLjZ_eecRVaeGd0cfNLUofQSBf3dA&usqp=CAU" alt="3" class="img4">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN4Z1MRAuOHYTBrY3QWhPNYHP93i807SLNG4R-pSZNmzfvkaV1ClDm0Lk7zgXHiMlsncs&usqp=CAU" alt="5" class="img6">
+
+
+
+ 
+</body>
+</html>
